@@ -26,8 +26,7 @@ public class TriangleUtilities {
 
     public static String getSmallTriangle() {
         String triangle = "";
-        int numberOfRows = 3;
-        for(int i = 1; i < numberOfRows; i++){
+        for(int i = 1; i <= 4 ; i++){
             for(int j = 0; j < i; j++) {
                 triangle += "*";
             }
