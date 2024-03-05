@@ -20,13 +20,23 @@ public class NumberUtilities {
         return null;
     }
 
+
+    // Look into the test case 3C - may be a testcase error
     public static String getRange(int start, int stop) {
-        return null;
+        String output = "";
+        for(int i = start; i < stop; i++) {
+            output += i;
+        }
+        return output;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String output = "";
+        for(int i = start; i < stop; i += step){
+            output += i;
+        }
+        return output;
     }
 
 
