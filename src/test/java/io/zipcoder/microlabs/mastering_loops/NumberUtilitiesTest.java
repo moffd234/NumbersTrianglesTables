@@ -8,7 +8,7 @@ public class NumberUtilitiesTest {
     public void testGetRange1A() {
         // : Given
         String expected = "0123456789";
-        int stop = 11;
+        int stop = 10; // Switched from 11 to 10 since 10 matches the expected output
 
         // : When
         String actual = NumberUtilities.getRange(stop);
@@ -87,7 +87,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetRange3B() {
         // : Given
-        String expected = "100101103104105106107108109";
+        String expected = "100101102103104105106107108109";  // Added 102 since the number was skipped in the case
         int start = 100;
         int stop = 110;
 
@@ -173,7 +173,7 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetEvenNumbers() {
         // : Given
-        String expected = "5791113151719";
+        String expected = "681012141618";
         int start = 5;
         int stop = 20;
 
@@ -187,10 +187,10 @@ public class NumberUtilitiesTest {
     @Test
     public void testGetOddNumbers() {
         // : Given
-        String expected = "681012141618";
+        String expected = "5791113151719";  // Swapped this with the GetEvenNumbers since it better matched to method
         int start = 5;
         int stop = 20;
-        int step = 5;
+        // int step = 5;  Removed since it doesn't match the expected nor the readme
 
         // : When
         String actual = NumberUtilities.getOddNumbers(start, stop);

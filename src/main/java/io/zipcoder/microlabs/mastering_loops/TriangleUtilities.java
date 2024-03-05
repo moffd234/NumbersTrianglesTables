@@ -5,14 +5,8 @@ import java.util.Arrays;
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        String triangle = "";
-        for(int i = 1; i < numberOfRows; i++){
-            for(int j = 0; j < i; j++) {
-                triangle += "*";
-            }
-            triangle += "\n";
-        }
-        return triangle;
+        String output = "";
+        return output;
     }
 
     public static String getRow(int numberOfStars) {
@@ -25,24 +19,10 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        String triangle = "";
-        for(int i = 1; i <= 4 ; i++){
-            for(int j = 0; j < i; j++) {
-                triangle += "*";
-            }
-            triangle += "\n";
-        }
-        return triangle;
+        return null;
     }
 
     public static String getLargeTriangle() {
-        String triangle = "";
-        for(int i = 1; i < 10 ; i++){
-            for(int j = 0; j < i; j++) {
-                triangle += "*";
-            }
-            triangle += "\n";
-        }
-        return triangle;
+        return null;
     }
 }
