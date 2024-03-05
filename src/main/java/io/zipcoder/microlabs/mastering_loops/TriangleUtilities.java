@@ -5,8 +5,13 @@ import java.util.Arrays;
 public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
-        String output = "";
-        return output;
+        StringBuilder output = new StringBuilder();
+        for(int i = 1; i < numberOfRows; i++){
+            output.append(getRow(i));
+            output.append("\n");
+        }
+
+        return output.toString();
     }
 
     public static String getRow(int numberOfStars) {
@@ -19,10 +24,10 @@ public class TriangleUtilities {
     }
 
     public static String getSmallTriangle() {
-        return null;
+        return getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-        return null;
+        return getTriangle(10);
     }
 }
