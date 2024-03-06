@@ -16,20 +16,12 @@ public class TableUtilities {
         for j = 1; j < size; j++
             append i * j to output
      */
+
     public static String getMultiplicationTable(int tableSize) {
         StringBuilder table = new StringBuilder();
         for(int i = 1; i <= tableSize; i++){  // Start from 1 so we don't have a column of 0s
             for(int j = 1; j <= tableSize; j++){
-                int numDigit = String.valueOf(i * j).length();
-                if(numDigit == 1) {
-                    table.append("  " + (i * j) + " |");
-                }
-                else if(numDigit == 2){
-                    table.append(" " + (i * j) + " |");
-                }
-                else{
-                    table.append((i * j) + " |");
-                }
+                table.append(String.format("%3d %s", i * j, "|"));
             }
             table.append("\n");
         }
